@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/rectangle1">
+
+    <ImageView
+        android:layout_width="163dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="224dp"
+        android:background="@drawable/test"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:text="DEPART"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="61dp"
+        android:layout_height="36dp"
+
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/test"
+        android:entries="@array/numbers"
+
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to" />
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="345dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/test"
+        android:ems="10"
+        android:drawableStart="@drawable/ic_baseline_add_location_alt_24"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:text="VERS"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="267dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/bluue"
+        android:fontFamily="casual"
+        android:onClick="go"
+        android:drawableStart="@drawable/ic_baseline_directions_bus_24"
+        android:text="CHERCHE TON BUS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="550dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
